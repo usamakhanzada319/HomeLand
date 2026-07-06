@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@theme {
+  --font-nunito: "Nunito Sans", sans-serif;
+  --font-roboto: "Roboto Mono", monospace;
+  --font-icomoon: "icomoon", sans-serif;
+  --font-flaticon: "Flaticon", sans-serif;
+  --font-bigmug: "fl-bigmug-line", sans-serif;
+}
+
+body {
+  font-family: var(--font-nunito);
+}
