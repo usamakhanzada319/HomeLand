@@ -1,6 +1,15 @@
 import { FaTh, FaList, FaSort } from "react-icons/fa";
 
-function ViewOptions({ view, setView, filter, setFilter, sort, setSort }) {
+function ViewOptions({
+  view,
+  setView,
+  filter,
+  setFilter,
+  sort,
+  setSort,
+  showFilter = true,
+  showSort = true,
+}) {
   const filters = [
     {
       id: "all",

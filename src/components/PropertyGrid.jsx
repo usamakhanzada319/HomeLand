@@ -83,14 +83,20 @@ const PropertiesData = [
   },
 ];
 
-function PropertyGrid() {
+function PropertyGrid({
+  properties = [],
+  title = "Properties",
+  subtitle = "",
+  showFilter = true,
+  showSort = true,
+}) {
   const [view, setView] = useState("grid");
   const [filter, setFilter] = useState("all");
   const [sort, setSort] = useState("");
 
   //filter logic
 
-  const filteredData = PropertiesData.filter((property) => {
+  const filteredData = properties.filter((property) => {
     if (filter === "all") return true;
     return property.type.toLowerCase() === filter;
   });

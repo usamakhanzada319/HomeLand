@@ -3,7 +3,6 @@ import { Link, NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 function Header() {
-  console.log("Header render ho raha hai!");
   {
     /*for mobile manu*/
   }
@@ -31,7 +30,7 @@ function Header() {
           {/*desktop nav */}
           <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             <NavLink
-              to="#"
+              to="/"
               className={({ isActive }) =>
                 `text-white/40 hover:text-white transition-colors duration-200 text-sm font-medium ${isActive ? "text-white" : ""}`
               }
@@ -40,7 +39,7 @@ function Header() {
             </NavLink>
 
             <NavLink
-              to="#"
+              to="buy"
               className={({ isActive }) =>
                 `text-white/40 hover:text-white transition-colors duration-200 text-sm font-medium ${isActive ? "text-white" : ""}`
               }
@@ -49,7 +48,7 @@ function Header() {
             </NavLink>
 
             <NavLink
-              to="#"
+              to="rent"
               className={({ isActive }) =>
                 `text-white/40 hover:text-white transition-colors duration-200 text-sm font-medium ${isActive ? "text-white" : ""}`
               }
@@ -64,7 +63,7 @@ function Header() {
               onMouseLeave={() => setIsDropdownOpen(false)}
             >
               <NavLink
-                to="#"
+                to="Properties"
                 className={({ isActive }) =>
                   `text-white/40 hover:text-white transition-colors duration-200 text-sm font-medium ${isActive ? "text-white" : ""}`
                 }
@@ -97,7 +96,7 @@ function Header() {
               </div>
             </div>
             <NavLink
-              to="#"
+              to="blogpage"
               className={({ isActive }) =>
                 `text-white/40 hover:text-white transition-colors duration-200 text-sm font-medium ${isActive ? "text-white" : ""}`
               }
@@ -106,7 +105,7 @@ function Header() {
             </NavLink>
 
             <NavLink
-              to="#"
+              to="about"
               className={({ isActive }) =>
                 `text-white/40 hover:text-white transition-colors duration-200 text-sm font-medium ${isActive ? "text-white" : ""}`
               }
@@ -115,7 +114,7 @@ function Header() {
             </NavLink>
 
             <NavLink
-              to="#"
+              to="contact"
               className={({ isActive }) =>
                 `text-white/40 hover:text-white transition-colors duration-200 text-sm font-medium ${isActive ? "text-white" : ""}`
               }
@@ -154,7 +153,7 @@ function Header() {
 
             <nav className="flex flex-col p-6  pt-16 space-y-4">
               <NavLink
-                to="#"
+                to="/"
                 className={({ isActive }) =>
                   `text-gray-700 hover:text-blue-300 transition ${isActive ? "text-blue-300 font-semibold" : ""}`
                 }
@@ -164,7 +163,7 @@ function Header() {
               </NavLink>
 
               <NavLink
-                to="#"
+                to="buy"
                 className={({ isActive }) =>
                   `text-gray-700 hover:text-blue-300 transition ${isActive ? "text-blue-300 font-semibold" : ""}`
                 }
@@ -174,7 +173,7 @@ function Header() {
               </NavLink>
 
               <NavLink
-                to="#"
+                to="rent"
                 className={({ isActive }) =>
                   `text-gray-700 hover:text-blue-300 transition ${isActive ? "text-blue-300 font-semibold" : ""}`
                 }
@@ -193,7 +192,7 @@ function Header() {
                 {isDropdownOpen && (
                   <div className="ml-4 mt-2 space-y-2">
                     <Link
-                      to="#"
+                      to="properties"
                       className="block text-gray-600 hover:text-blue-300 transition"
                       onClick={() => setIsMenuOpen(false)}
                     >
@@ -218,7 +217,7 @@ function Header() {
                 )}
               </div>
               <NavLink
-                to="#"
+                to="blogpage"
                 className={({ isActive }) =>
                   `text-gray-700 hover:text-blue-300 transition ${isActive ? "text-blue-300 font-semibold" : ""}`
                 }
@@ -228,7 +227,7 @@ function Header() {
               </NavLink>
 
               <NavLink
-                to="#"
+                to="about"
                 className={({ isActive }) =>
                   `text-gray-700 hover:text-blue-300 transition ${isActive ? "text-blue-300 font-semibold" : ""}`
                 }
@@ -238,7 +237,7 @@ function Header() {
               </NavLink>
 
               <NavLink
-                to="#"
+                to="contact"
                 className={({ isActive }) =>
                   `text-gray-700 hover:text-blue-300 transition ${isActive ? "text-blue-300 font-semibold" : ""}`
                 }

@@ -2,18 +2,25 @@ import React from "react";
 import {
   Hero,
   SearchForm,
-  PropertiesData,
+  // PropertiesData,
   Choose,
   Blog,
   Agents,
+  PropertyGrid,
 } from "../components/index.js";
-
+import { allProperties } from "../../Data/properties.js";
 function Home() {
   return (
     <>
       <Hero />
       <SearchForm />
-      <PropertiesData />
+      <PropertyGrid
+        properties={allProperties}
+        title="Our Properties"
+        subtitle="Find your dream property"
+        showFilter={true}
+        showSort={true}
+      />
       <Choose />
       <Blog />
       <Agents />
